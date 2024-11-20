@@ -19,12 +19,13 @@ int sum_them_all(const unsigned int n, ...)
         i++; 
         // printf("result%d= %d\n", i, result);
     }
+    va_end(nums);
     return (result);
 }
 
 int main()
 {
-     unsigned int n;
+    int n;
     scanf("%d", &n);
     printf("result = %d\n", sum_them_all(n, 5, 4, 3, 8));
 }
