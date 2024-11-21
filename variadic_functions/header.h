@@ -4,7 +4,7 @@
 typedef struct printer
 {
     char c;
-    char* format;
+    void (*f)(va_list n);
 }t_printer;
 
 #include <stdio.h>
